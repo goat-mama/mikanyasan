@@ -1,0 +1,553 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@media screen and (max-width:1000px){
+    /* スマホ用CSS -------------- */
+
+.display: none;
+
+a {
+    color: black;
+    text-decoration: none;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+html {
+    overflow-x: hidden;
+   }
+
+li {
+    list-style: none;
+    line-height: normal;
+  }
+.container {
+    margin: 0 0 0 0;
+    padding: 0 25px;
+}
+
+/* ハンバーガー */
+.label .span {
+    display: block;
+}
+.line1,.line2,.line3{
+	width: 20px;
+	height: 3px;
+	background-color: black;
+	margin: 3px 0 0 10px;
+    display: block;
+}
+.line1 {
+    margin-top: 10px;
+}
+header .container{
+    width: 100%;
+    padding: 50px 0 0 0;
+    display: none;
+}
+.open,
+.close {
+    display: block;
+}
+.open {
+    position: absolute;
+}
+.close {
+    position: absolute;
+    transform: scale(1.5);
+    padding: 5px 0 0 10px;
+}
+.menu-box ul {
+    display: none;
+  }
+  .menu-box.active ul {
+    display: block;
+  }
+
+
+/* ロゴ */
+.area_logo_header_mobile {
+    display: block;
+    text-align: center;
+}
+
+/* .area_logo_header .logo {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+} */
+.area_logo_header img {
+    height: 65px;
+    vertical-align: bottom;
+    margin-left: 0px;
+    text-align: center;
+    display: block;
+}
+
+/* ヘッダーナビ */
+header .header_mobile {
+    position: fixed;
+}
+
+header {
+    position: none;
+    z-index: 2000;
+}
+
+.nav_header {
+    margin: 0 0 0 auto;  
+  }
+
+/* リストナビ */
+.list_nav_header {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.list_nav_header > li {
+    padding: 0 15px;
+    /* font-family: Hannotate SC; */
+    font-weight: 700;
+}
+.list_nav_header :hover {
+    opacity: 0.7;
+} 
+
+/*　トップビュー */
+
+.area_top_view { 
+    width: 100%;
+    height: 100%;
+    padding-top: 35px;
+  }
+.area_top_view > .container {
+    position: relative;
+    padding: 0 0;
+    z-index: 100;
+}
+.area_top_view img {
+    vertical-align: bottom;
+    object-fit: cover; 
+    width: 160%;
+    height: 160%;
+    margin-top: 140px;
+    transform: translate(-35%);
+
+}
+.area_top_view .ttl {
+    font-size: 35px;
+    /* font-family: Hannotate SC; */
+    letter-spacing: .2em;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    transform: translate(0%,0%);
+}
+.area_top_view .ttl span {
+    letter-spacing: .1em;
+    font-size: 22px;
+}
+
+/*　みかんやさんについて */
+.area_home_about .container {
+    padding: 0 10px;
+}
+.head_home {
+    margin: 50px 20px;
+    padding-top: 50 px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head_home img {
+    width: 50px;
+}
+
+.head_home .container {
+    margin: 0 24px;
+}
+.head_home .ttl {
+    padding: 0 5px;
+    /* font-family: Hannotate SC; */
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*　みかんやさんについて　2分割レイアウト */
+.area_home_about {
+    margin: 0 auto;
+}
+.layout_1_div {
+    margin-bottom: 50px;
+    display: block;
+}
+.layout_1_div > div {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.layout_1_div img {
+    width: 100%;
+    height: auto;
+}
+.layout_1_op_div { 
+    margin-bottom: 100px;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+}
+.layout_1_op_div > div {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.layout_1_op_div img {
+    width: 100%;
+    height: auto;
+}
+
+/*　テキストホーム　*/
+.text_about {
+    margin: 0 0;
+}
+.text_about .ttl {
+    font-size: 23px;
+    margin: 0 0 15px 0;
+    line-height: normal;
+}
+.text_about .ttl .ttl_br {
+    display: none;
+}
+
+.text_about .description {
+    font-size: 14px;
+    color:  font: 500  15px;
+    line-height: normal;
+    color: #6F6F6F;
+    padding-bottom: 15px;
+
+}
+.text_about .description_ill {
+    font-size: 14px;
+    color: #6F6F6F;
+}
+.description_ill img {
+    display: none;
+    height: 170px;
+    width: auto;
+}
+ 
+
+
+/*　みかんやの種類と値段 */
+.area_home_product {
+    background-color: #E0F7FD;
+    background-image: url("illust/mikan_il_top@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.area_home_product .head_home {
+    padding-top: 100px;
+}
+.body_product {
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+.layout_2_div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;    
+    text-align: center;
+    align-items: center;
+    margin-bottom: 60px;
+    background-color: white;
+}
+.img_product img {
+    width: 100%;
+    height: auto;
+}
+.layout_2_div > div {
+    width: 100%;
+}
+
+/*　テキストホーム　*/
+.text_home {
+    background-color: white;
+}
+.text_home .text_sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    text-align: center;
+}
+.text_home .text_sub .img_ttl {
+    padding: 0 15px;
+}
+.text_home .ttl {
+    /* font-family: Hannotate SC; */
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: black;
+}
+
+.text_home .season {
+    background-color: #62C45C;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 24px;
+    display: inline-block;
+    justify-content: center;
+
+}
+.text_main {
+    text-align: center;
+    color: black;
+}
+
+.text_main .description {
+    font-size: 14px;
+    color: #6F6F6F;
+    max-width: 280px;
+    margin: 10px auto;
+    padding: 0 15px;
+    line-height: normal;
+}
+.text_main .weight {
+    font-size: 20px;
+}
+.text_main .weight span {
+    font-size: 16px;
+}
+
+.text_main .price {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+.text_main .price p {
+    margin-top: 15px;
+    margin: 10px 10px;
+    padding: 15px 15px;
+    background-color: #FEF4B7;
+    border-radius: 4px;
+    font-weight: 550;
+}
+
+.text_main .price p span {
+    font-weight: normal;
+    font-size: 16px;
+    color: #6F6F6F;
+
+}
+/*　キャプション　*/
+.caption_area {
+    display: block;
+    justify-content: center;
+}
+.caption_area li {
+    padding: 0 0;
+}
+
+/*　ご購入について　*/
+.contact_area {
+    margin: 50px auto;
+    text-align: center;
+    justify-content: center;
+}
+.inner {
+    position: relative;
+}
+.inner img {
+    width: 100%;
+}
+.inner .inner_ill img {
+    display: none;
+    height: 40%;
+    width: auto;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+}
+.inner h2 {
+    /* font-family: Hannotate SC; */
+    font-size: 30px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.inner p {
+    font-size: 14px;
+    color: #6F6F6F;
+}
+.inner .tell {
+    font-size: 30px;
+    color: black;
+    margin: 15px 0;
+}
+.inner .tell span {
+    font-size: 14px;
+}
+.inner .btn a {
+    padding: 20px 80px;
+    display: block;
+}
+
+
+.inner .btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+
+/*　動画紹介　*/
+.movie_area {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+
+}
+.movie_area .ttl{
+    text-align: center;
+    margin: 15px 15px;
+}
+.movie_area p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.footer_home img {
+    background-image: url(illust3/mikan_il_top@2x.png) no-repeat top center;
+    vertical-align: bottom;
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+/*　お知らせ　*/
+.area_home_information .head_home {
+    margin-bottom: 30px;
+}
+.area_home_information .body_home {
+    width: 100%;
+    margin: 0 auto;
+    border: 4px solid;
+    border-color:#FAC587;
+    border-radius: 6px;
+    overflow-y: scroll;
+    position: relative;
+}
+.area_home_information .text_home {
+    margin: 30px 30px;
+    height: 0%;
+
+}
+.ttl_inf {
+    /* font-family: Hannotate SC; */
+    color: black;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.area_home_information .text_home {
+    font-size: 14px;
+    color: #6F6F6F;
+    line-height: normal;
+}
+.area_home_information .body_home img {
+    width: 100px;
+    position: absolute; 
+    right: 30; 
+    top: 100%;
+}
+
+/*　SNS　*/
+.area_home_sns .head_home {
+    margin-bottom: 30px;
+}
+.area_home_sns .container {
+    background-color: #FFFBD9;
+    padding-bottom: 50px;
+}
+.area_home_sns .head_home {
+    padding-top: 50px;
+}
+
+.area_home_sns .body_home {
+    max-width: 1000px;
+    align-items: center;
+    margin: 0 auto;
+}
+.icon {
+    margin: 10px 0 0 auto;
+    text-align: right;
+}
+.icon a {
+    padding: 10px 10px;
+    /* display: block;   */
+}
+
+.icon a:hover {
+    opacity: 0.7;
+}
+
+
+
+
+/*　フッター　*/
+.footer .container {
+    height: 100%;
+    display: none;
+    justify-content: space-between; 
+    align-items: center;    
+    background-color: #707070;
+    color: white;
+}
+.area_logo_footer{
+    padding-left: 0;
+}
+nav .nav_footer {
+    display: none;
+}
+.area_logo_footer .ttl {
+    margin-top: 30px;
+}
+.list_nav_footer {
+    padding-right: 0;
+}
+.list_nav_footer li {
+    padding: 10px;
+}
+.list_nav_footer :hover {
+    opacity: 0.7;
+}
+
+
+.captiion_footer {
+    background-color: black;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cap {
+    color: white;
+    font-size : 10px;
+}
+}

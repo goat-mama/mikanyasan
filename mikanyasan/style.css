@@ -1,0 +1,558 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+a {
+    text-decoration: none;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+    line-height: normal;
+  }
+.container {
+    margin: 0 0 0 0;
+}
+/* ハンバーガー */
+.open,
+.close {
+    display: none;
+}
+input[type="checkbox"] {
+    position: absolute;
+    left: -50vw;
+}
+
+/*　ヘッダー */
+header {
+    width: 100%;
+}  
+
+aside {
+    min-width: 230px;
+    flex-direction: column;
+    position: absolute;
+    left: -500px;
+    height: 300px;
+    background-color: white;
+    z-index: 2000;
+    margin: 0 auto;
+    transition: all 0.3s;
+    background-color: white;
+
+}
+
+input[type="checkbox"]:checked ~ aside {
+    left: 0;
+}
+input[type="checkbox"]:checked ~ .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8) ;
+    z-index: 2000;
+}
+
+.list_nav_header_mobile {
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+.list_nav_header_mobile > li {
+    padding: 15px 15px;
+    font-family: 'Kiwi Maru', serif;    
+    font-weight: 700;
+    margin: 0 auto;
+}
+.list_nav_header_mobile :hover {
+    opacity: 0.7;
+} 
+
+
+header > .container {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* ロゴ */
+.area_logo_header img {
+    height: 65px;
+    vertical-align: bottom;
+    margin-left: 40px;
+}
+
+.area_logo_header_mobile {
+    display: none;
+}
+
+
+/* ヘッダーナビ */
+header {
+    position: fixed;
+    z-index: 2000;
+    margin-top: 0;
+    top: 0;
+
+}
+.nav_header {
+    margin: 0 0 0 auto;  
+  }
+/* リストナビ */
+.list_nav_header {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.list_nav_header > li {
+    padding: 0 15px;
+    font-family: 'Kiwi Maru', serif;    
+    font-weight: 700;
+}
+.list_nav_header :hover {
+    opacity: 0.7;
+} 
+
+/*　トップビュー */
+.area_top_view { 
+    width: 100%;
+    height: 100%;
+  }
+.area_top_view > .container {
+    position: relative;
+}
+.area_top_view img {
+    vertical-align: bottom;
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+}
+.area_top_view .ttl {
+    font-size: 60px;
+    font-family: 'Kiwi Maru', serif;    
+    letter-spacing: .2em;
+    line-height: 70px;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: translate(-10%,-50%);
+    margin: 0;
+}
+.area_top_view .ttl span {
+    letter-spacing: .1em;
+    font-size: 40px;
+}
+
+/*　みかんやさんについて */
+.head_home {
+    margin: 100px 0 100px 0;
+    padding-top: 50 px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.head_home .ttl {
+    padding: 0 15px;
+    font-family: 'Kiwi Maru', serif;    
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*　みかんやさんについて　2分割レイアウト */
+.area_home_about {
+    max-width: 1080px;
+    display: block;
+    margin: 0 auto;
+}
+.layout_1_div {
+    display: flex;
+    margin-bottom: 100px;
+}
+.layout_1_div img {
+    height: 100%;
+    width: 100%;
+}
+.layout_1_div .img_about img {
+    height: 100%;
+    width: 100%;
+}
+
+.layout_1_div > div {
+    width: 50%;
+    padding: 0 15px;
+}
+.layout_1_op_div {
+    display: flex;
+    margin-bottom: 100px;
+}
+.layout_1_op_div img {
+    height: 100%;
+    width: 100%;
+}
+.layout_1_op_div > div {
+    width: 50%;
+    padding: 0 15px;
+}
+
+/*　テキストホーム　*/
+.text_about {
+    margin: 0 0;
+}
+.text_about .ttl {
+    font-size: 23px;
+    margin: 0 0 30px 0;
+    line-height: normal;
+}
+.text_about .description {
+    font-size: 14px;
+    font: 500  15px;
+    line-height: 24px;
+    color: #6F6F6F;
+}
+.text_about .description_ill {
+    font-size: 14px;
+    color: #6F6F6F;
+}
+.description_ill img {
+    height: 170px;
+    width: auto;
+}
+ 
+
+
+/*　みかんやの種類と値段 */
+.area_home_product {
+    display: block;
+    background-color: #E0F7FD;
+    background-image: url("illust/mikan_il_top@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 30px;
+
+}
+
+.area_home_product .head_home {
+    padding-top: 200px;
+}
+.body_product {
+    width: 100%; 
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.layout_2_div {
+    width: 1000px;
+    object-fit: cover;
+    display: flex;
+    text-align: center;
+    margin-bottom: 60px;
+    background-color: white;
+}
+.img_product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.layout_2_div > div {
+    width: 50%;
+}
+
+/*　テキストホーム　*/
+.text_home {
+    background-color: white;
+}
+.text_home .text_sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    text-align: center;
+}
+.text_home .ttl {
+    font-family: 'Kiwi Maru', serif;    
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+    color: black;
+}
+
+.text_home .season {
+    background-color: #62C45C;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 24px;
+    display: inline-block;
+    justify-content: center;
+
+}
+.text_main {
+    text-align: center;
+    color: black;
+}
+
+.text_main .description {
+    font-size: 14px;
+    color: #6F6F6F;
+    max-width: 280px;
+    margin: 10px auto;
+    line-height: normal;
+}
+.text_main .weight {
+    font-size: 20px;
+}
+.text_main .weight span {
+    font-size: 16px;
+}
+
+.text_main .price {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+.text_main .price p {
+    margin-top: 15px;
+    margin: 10px 10px;
+    padding: 15px 15px;
+    background-color: #FEF4B7;
+    border-radius: 4px;
+    font-weight: 550;
+}
+
+.text_main .price p span {
+    font-weight: normal;
+    font-size: 16px;
+    color: #6F6F6F;
+
+}
+
+.caption_area {
+    display: flex;
+    justify-content: space-between;
+}
+.caption_area li {
+    padding: 0 0;
+}
+
+/*　ご購入について　*/
+.contact_area {
+    margin: 100px auto;
+    text-align: center;
+    justify-content: center;
+}
+.inner {
+    position: relative;
+}
+.inner img {
+    height: 10px;
+}
+.inner .inner_ill img {
+    height: 140px;
+    position: absolute;
+    top: 170px;
+    right: 90px;
+}
+.inner h2 {
+    font-family: 'Kiwi Maru', serif;    
+    font-size: 30px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.inner p {
+    font-size: 14px;
+    color: #6F6F6F;
+}
+.inner .tell {
+    font-size: 30px;
+    color: black;
+    margin: 15px 0;
+}
+.inner .tell span {
+    font-size: 14px;
+}
+.inner .btn span {
+    font-size: 25px;
+}
+.inner .btn {
+    background-color:white;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 4px; 
+    display: inline-block;
+    cursor: pointer;
+    justify-content: center;
+    margin: 15px 0 30px 0;
+    font-size: 20px;
+    color: black;
+    border-color: black;
+    transition: 0.2s;
+}
+
+.inner .btn a {
+    padding: 20px 80px;
+    display: block;
+}
+
+.inner .btn::before{
+    left: 3px;
+    width: 4px;
+    height: 4px;
+    border-top: 2px solid #7a0;
+    border-right: 2px solid #7a0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.inner .btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+
+
+
+/*　動画紹介　*/
+.movie_area {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1150px;
+}
+.movie_area .ttl{
+    text-align: center;
+    margin: 15px 15px;
+}
+.movie_area p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.footer_home img {
+    background-image: url(illust3/mikan_il_top@2x.png) no-repeat top center;
+    vertical-align: bottom;
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+/*　お知らせ　*/
+.area_home_information .body_home {
+    width: 1000px;
+    margin: 0 auto;
+    border: 4px solid;
+    border-color:#FAC587;
+    border-radius: 6px;
+    overflow-y: scroll;
+    position: relative;
+}
+.area_home_information .text_home {
+    margin: 30px 70px;
+    height: 0%;
+
+}
+.ttl_inf {
+    font-family: 'Kiwi Maru', serif;    
+    color: black;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.area_home_information .text_home {
+    font-size: 14px;
+    color: #6F6F6F;
+    line-height: normal;
+}
+.area_home_information .body_home img {
+    width: 200px;
+    position: absolute; 
+    right: 0; 
+    top: 40%;
+}
+
+/*　SNS　*/
+.area_home_sns .container {
+    background-color: #FFFBD9;
+    padding-bottom: 100px;
+}
+.area_home_sns .head_home {
+    padding-top: 100px;
+}
+
+.area_home_sns .body_home {
+    max-width: 1000px;
+    align-items: center;
+    margin: 0 auto;
+}
+.icon {
+    margin: 10px 0 0 auto;
+    text-align: right;
+}
+.icon a:hover {
+    opacity: 0.7;
+}
+.icon a {
+    padding: 10px 10px;
+    /* display: block;   */
+}
+.snapwidget-widget {
+    border: 20pt;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+
+
+
+/*　フッター　*/
+.footer .container {
+    height: 350px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;    
+    background-color: #707070;
+    color: white;
+}
+.area_logo_footer {
+    padding-left: 200px;
+}
+.area_logo_footer .ttl {
+    margin-top: 30px;
+}
+.list_nav_footer {
+    padding-right: 200px;
+}
+.list_nav_footer li {
+    padding: 10px;
+    color: white;
+}
+.list_nav_footer a {
+    color: white;
+}
+
+.list_nav_footer :hover {
+    opacity: 0.7;
+} 
+.captiion_footer {
+    background-color: black;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cap {
+    color: white;
+    font-size : 10px;
+}
